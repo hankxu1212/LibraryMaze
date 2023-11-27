@@ -12,8 +12,6 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private Color textColorTransparent;
     [SerializeField] private Color textColorOpaque;
     [SerializeField] public TextMeshProUGUI buttonText;
-    [SerializeField] private CanvasGroup leftIndicator;
-    [SerializeField] private CanvasGroup rightIndicator;
     private float scaleAmount = 1.05f;
     private float animationTime = .3f;
     private Vector3 initialScale;
@@ -28,7 +26,6 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private void Start()
     {
         initialScale = transform.localScale;
-        SetIndicatorAlphas(0);
     }
 
     public void Disable(bool setTransparent = true)
@@ -46,7 +43,7 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void AddListener(UnityAction call)
     {
-        // TODO: add playsound effects of mouse click
+        
         button.onClick.AddListener(call);
     }
 
@@ -60,12 +57,9 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (!startAnimation)
         {
             transform.localScale = initialScale;
-            SetIndicatorAlphas(0);
         }
         else
         {
-            SetIndicatorAlphas(1);
-
             Vector3 endScale = initialScale * scaleAmount;
             float time = 0;
         
@@ -106,14 +100,5 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if(animateOnSelect != null)
             StopCoroutine(animateOnSelect);
         animateOnSelect = StartCoroutine(AnimateSelection(false));
-    }
-
-    private void SetIndicatorAlphas(float alpha)
-    {
-        if (leftIndicator)
-        {
-            leftIndicator.alpha = alpha;
-            rightIndicator.alpha = alpha;
-        }
     }
 }

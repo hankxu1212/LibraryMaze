@@ -25,22 +25,17 @@ public class GameInput : MonoBehaviour
         
         // enable all maps
         gameInputActions.Player.Enable();
+        gameInputActions.Player.Interact.performed += InteractOnperformed;
     }
-
     private void OnDisable()
     {
-        // debug
         gameInputActions.Dispose();
+        gameInputActions.Player.Interact.performed -= InteractOnperformed;
     }
 
-    public Vector3 GetMovementVectorNormalized()
+    private void InteractOnperformed(InputAction.CallbackContext obj)
     {
-        Vector2 readVal = gameInputActions.Player.Move.ReadValue<Vector2>();
-        return new Vector3(readVal.x, 0, readVal.y);
+        OnInteract?.Invoke();
     }
 
-    public Vector2 GetMouseDelta()
-    {
-        return gameInputActions.Player.Look.ReadValue<Vector2>();
-    }
 }
