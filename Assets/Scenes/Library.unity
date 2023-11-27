@@ -7085,7 +7085,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3130826
+  m_Name: pb_Mesh36374
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -9433,7 +9433,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2721318
+  m_Name: pb_Mesh35902
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -20681,7 +20681,8 @@ PrefabInstance:
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 30
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1376260242963943424, guid: 1c7fab5c1d50277498d744e7d5ba1610, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
