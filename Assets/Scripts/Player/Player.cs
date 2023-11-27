@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 
 /// <summary>
 /// The main partial class for Player
@@ -15,13 +16,12 @@ public partial class Player : MonoBehaviour
 {
     [Header("Fields")]
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
+
     public static Player Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
-        
-        controller = GetComponent<CharacterController>();
     }
 
     private void Start()
@@ -31,14 +31,10 @@ public partial class Player : MonoBehaviour
 
     private void Update()
     {
-        HandleMovement();
     }
 
-    #region TRIGGER FUNCTIONS
-    
     private void OnInteract()
     {
         Interact();
     }
-    #endregion
 }
