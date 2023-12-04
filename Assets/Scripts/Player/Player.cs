@@ -14,9 +14,6 @@ using UnityEngine.VFX;
 [RequireComponent(typeof(CharacterController))]
 public partial class Player : MonoBehaviour
 {
-    [Header("Fields")]
-    [SerializeField] private CinemachineVirtualCamera virtualCamera;
-
     public static Player Instance { get; private set; }
 
     private void Awake()
