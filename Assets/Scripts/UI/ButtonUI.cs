@@ -43,7 +43,6 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void AddListener(UnityAction call)
     {
-        
         button.onClick.AddListener(call);
     }
 

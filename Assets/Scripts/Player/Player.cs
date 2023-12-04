@@ -26,10 +26,6 @@ public partial class Player : MonoBehaviour
         GameInput.Instance.OnInteract += OnInteract;
     }
 
-    private void Update()
-    {
-    }
-
     private void OnInteract()
     {
         Interact();
