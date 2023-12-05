@@ -28,7 +28,7 @@ public class DialogueUI : UI
 
     public void StartDialogue(Story newStory)
     {
-	    // GameEventsManager.Instance.GameStateEvents.UIToggle(true);
+	    GameEventsManager.Instance.GameStateEvents.PauseToggle(true);
 	    Show();
         story = newStory;
         RefreshView();
@@ -91,7 +91,7 @@ public class DialogueUI : UI
 		else
 		{
 			Hide();
-			// GameEventsManager.Instance.GameStateEvents.UIToggle(false);
+			GameEventsManager.Instance.GameStateEvents.PauseToggle(false);
 		}
 	}
 

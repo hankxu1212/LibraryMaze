@@ -3,11 +3,12 @@ using Ink.Runtime;
 
 public class InteractableDialogue : InteractableObject
 {
-    [SerializeField] private TextAsset inkJSONAsset;
+    [SerializeField] private TextAsset[] inkJSONAssets;
+    
     public override void Interact()
     {
-        interactionsOccured++;
-        var story = new Story(inkJSONAsset.text);
+        var story = new Story(inkJSONAssets[interactionsOccured].text);
         DialogueUI.Instance.StartDialogue(story);
+        interactionsOccured++;
     }
 }
