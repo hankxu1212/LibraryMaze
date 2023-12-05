@@ -8,7 +8,7 @@
 public class InteractableObject : MonoBehaviour, IInteractable
 {
     [SerializeField] private string ID; // object id, should uniquely identifies an object
-    [SerializeField] protected string interactText;
+    [SerializeField] public string interactText;
     [SerializeField] protected int maxInteractions;
     protected int interactionsOccured = 0;
     protected bool disabled;
