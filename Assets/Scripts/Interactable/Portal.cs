@@ -8,6 +8,7 @@ public class Portal : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("Valley");
+            // SceneManager.LoadScene("GoodEnd", LoadSceneMode.Additive);
         }
     }
 }

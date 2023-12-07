@@ -817,7 +817,7 @@ VisualEffect:
       - m_Value: {x: 0.15445757, y: 1.4014218, z: 3.672563}
         m_Name: BoundingBox_center
         m_Overridden: 1
-      - m_Value: {x: 18.84, y: 0, z: 3.03}
+      - m_Value: {x: 16.66, y: 0, z: -6.28}
         m_Name: PlayerPosition
         m_Overridden: 1
       - m_Value: {x: 6.44528, y: 3.9600692, z: 9.870238}
@@ -9132,6 +9132,7 @@ Transform:
   - {fileID: 1288076476}
   - {fileID: 1878244088}
   - {fileID: 1563540188}
+  - {fileID: 1445340206}
   m_Father: {fileID: 117020320}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14364,6 +14365,124 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 24254654}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &869255222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869255223}
+  - component: {fileID: 869255225}
+  - component: {fileID: 869255224}
+  m_Layer: 0
+  m_Name: Spot Light (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869255223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869255222}
+  m_LocalRotation: {x: 0.80898887, y: -0, z: -0, w: 0.587824}
+  m_LocalPosition: {x: 11.59, y: 6.93, z: 4.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1176318477}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 107.994995, y: 0, z: 0}
+--- !u!114 &869255224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869255222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &869255225
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869255222}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3.9
+  m_Range: 7.23
+  m_SpotAngle: 125.84026
+  m_InnerSpotAngle: 0
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &872846305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15296,53 +15415,53 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'In the Library, let your journey begin
 
-    Start on the first floor
-    as you make your way up
+    Start on the first floor as
+    you make your way up
 
     Located somewhere in the galleries within
 
-    My
-    name written down, not on a coffee cup
+    My name
+    written down, not on a coffee cup
 
-    
+
 
     My works are influential
 
-    I
-    am quoted all the time
+    I am quoted
+    all the time
 
     To literature I am essential
 
-    And my lyrics
-    frequently rhyme
+    And my lyrics frequently
+    rhyme
 
-    
+
 
     My timeless works are on display
 
-    For all
-    who visit to greatly admire
+    For all who visit to greatly
+    admire
 
     From Stage to Page, go see my work today
 
-    View
-    my folios, before they expire
+    View my folios, before
+    they expire
 
-    
+
 
     I am immortalized, my name is well-known
 
-    Even
-    more so, now that I have my own zone
+    Even more so,
+    now that I have my own zone
 
-    
 
-    Seek out a mistake within my
-    walls,
 
-    A printed error, despite my all
+    Seek out a mistake within my walls,
 
-    
+    A
+    printed error, despite my all
+
+
 
     What is the error?
 
@@ -17719,7 +17838,7 @@ VisualEffect:
       - m_Value: {x: 0.15445757, y: 1.4014218, z: 3.672563}
         m_Name: BoundingBox_center
         m_Overridden: 1
-      - m_Value: {x: 18.84, y: 0, z: 3.03}
+      - m_Value: {x: 16.66, y: 0, z: -6.28}
         m_Name: PlayerPosition
         m_Overridden: 1
       - m_Value: {x: 6.44528, y: 3.9600692, z: 9.870238}
@@ -20217,6 +20336,7 @@ Transform:
   - {fileID: 230961853}
   - {fileID: 1276034742}
   - {fileID: 255833055}
+  - {fileID: 869255223}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21422,7 +21542,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30970
+  m_Name: pb_Mesh30756
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -23269,7 +23389,7 @@ MonoBehaviour:
     My
     name written down, not on a coffee cup
 
-    
+
 
     My works are influential
 
@@ -23278,36 +23398,36 @@ MonoBehaviour:
 
     To literature I am essential
 
-    And my lyrics
-    frequently rhyme
+    And my lyrics frequently
+    rhyme
 
-    
+
 
     My timeless works are on display
 
-    For all
-    who visit to greatly admire
+    For all who visit to greatly
+    admire
 
     From Stage to Page, go see my work today
 
-    View
-    my folios, before they expire
+    View my folios, before
+    they expire
 
-    
+
 
     I am immortalized, my name is well-known
 
-    Even
-    more so, now that I have my own zone
+    Even more so,
+    now that I have my own zone
 
-    
 
-    Seek out a mistake within my
-    walls,
 
-    A printed error, despite my all
+    Seek out a mistake within my walls,
 
-    
+    A
+    printed error, despite my all
+
+
 
     What is the error?
 
@@ -24398,7 +24518,7 @@ GameObject:
   - component: {fileID: 1374959774}
   - component: {fileID: 1374959773}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: Door4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25724,6 +25844,164 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 284815850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1445340205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 400805645}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.389999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.81
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9757748
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000036834475
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2187774
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000000825862
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 25.274
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      propertyPath: m_Name
+      value: cat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1445340208}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: acb4f114973914ead9e5031763689782,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1445340211}
+  m_SourcePrefab: {fileID: 100100000, guid: acb4f114973914ead9e5031763689782, type: 3}
+--- !u!4 &1445340206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acb4f114973914ead9e5031763689782,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445340205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1445340207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acb4f114973914ead9e5031763689782,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445340205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1445340208
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445340207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.14420877
+  m_Center: {x: 2.5435825e-11, y: 0.122809075, z: -0.0038851728}
+--- !u!114 &1445340211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445340207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e901ed13af0a4d969dd7011c3e159a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: cat
+  interactText: Talk
+  maxInteractions: 3
+  inkJSONAssets:
+  - {fileID: 4900000, guid: 96bbbe4d23c6d40439801641c31156d2, type: 3}
+  - {fileID: 4900000, guid: f7f7e02536d3e40b498e8b6dd61c84e2, type: 3}
+  - {fileID: 4900000, guid: 223e42a3f70884da3aba40b8d917b243, type: 3}
+  puzzle: {fileID: 102058555}
+  doorToOpen: {fileID: 1374959772}
+  answer: 4034
+  puzzleText: Scan the QR code and follow the pawprints...
+  ending: 0
 --- !u!1001 &1447501278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30674,7 +30952,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31888
+  m_Name: pb_Mesh31720
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -33448,12 +33726,12 @@ MonoBehaviour:
   answer: Blindness Attacks Legacy
   puzzleText: 'Second Floor:
 
-    
+
 
     Row 100, 1577.z3, First Word
 
-    Row
-    22, 792.j3R523, Second Word
+    Row 22, 792.j3R523,
+    Second Word
 
     Row 108, 2447.L45, Second Word
 
@@ -34117,7 +34395,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31012
+  m_Name: pb_Mesh105956
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -36471,7 +36749,7 @@ PrefabInstance:
     - target: {fileID: 848496673815948309, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.84
+      value: 16.66
       objectReference: {fileID: 0}
     - target: {fileID: 848496673815948309, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
@@ -36481,7 +36759,7 @@ PrefabInstance:
     - target: {fileID: 848496673815948309, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.03
+      value: -6.28
       objectReference: {fileID: 0}
     - target: {fileID: 848496673815948309, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
@@ -36506,7 +36784,7 @@ PrefabInstance:
     - target: {fileID: 1648864615614707166, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.84
+      value: 16.66
       objectReference: {fileID: 0}
     - target: {fileID: 1648864615614707166, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
@@ -36516,7 +36794,7 @@ PrefabInstance:
     - target: {fileID: 1648864615614707166, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.03
+      value: -6.28
       objectReference: {fileID: 0}
     - target: {fileID: 5665950007039334264, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
@@ -36591,7 +36869,7 @@ PrefabInstance:
     - target: {fileID: 7531316823990566454, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.84
+      value: 16.66
       objectReference: {fileID: 0}
     - target: {fileID: 7531316823990566454, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
@@ -36601,7 +36879,7 @@ PrefabInstance:
     - target: {fileID: 7531316823990566454, guid: c6110d680d32016418faff33416ebd70,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.03
+      value: -6.28
       objectReference: {fileID: 0}
     - target: {fileID: 7531316823990566454, guid: c6110d680d32016418faff33416ebd70,
         type: 3}

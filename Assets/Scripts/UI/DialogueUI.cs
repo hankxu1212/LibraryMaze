@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using TMPro;
@@ -18,6 +19,8 @@ public class DialogueUI : UI
     private const int MAX_CHOICES = 3;
     private Coroutine displayLineCoroutine;
 
+    public List<Choice> choicesMadeLast;
+
     private void Awake()
     {
 	    Instance = this;
@@ -28,6 +31,7 @@ public class DialogueUI : UI
 
     public void StartDialogue(Story newStory)
     {
+	    choicesMadeLast = new();
 	    GameEventsManager.Instance.GameStateEvents.PauseToggle(true);
 	    Show();
         story = newStory;
@@ -54,7 +58,11 @@ public class DialogueUI : UI
 		if(story.currentChoices.Count > 0)
 		{
 			foreach (Choice choice in story.currentChoices) {
-				CreateChoiceView(choice.text.Trim(), () => OnClickChoiceButton(choice));
+				CreateChoiceView(choice.text.Trim(), () =>
+				{
+					// Debug.Log(choice.text);
+					OnClickChoiceButton(choice);
+				});
 			}
 			LayoutRebuilder.ForceRebuildLayoutImmediate(choicesHolder.GetComponent<RectTransform>());
 		}
@@ -74,7 +82,7 @@ public class DialogueUI : UI
 		foreach (var _ in line)
 		{
 			displayText.maxVisibleCharacters++;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.04f);
 		}
 
 		displayLineCoroutine = null;
@@ -113,6 +121,7 @@ public class DialogueUI : UI
 		}
 		else
 		{
+			choicesMadeLast.Add(choice);
 			story.ChooseChoiceIndex (choice.index);
 			RefreshView();
 		}

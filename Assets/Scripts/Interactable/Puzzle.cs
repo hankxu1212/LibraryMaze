@@ -20,7 +20,13 @@ public class Puzzle : MonoBehaviour
         puzzleText.gameObject.SetActive(false);
         congrats.text = "";
     }
-    
+
+    public void ActivateCongratsAndSetText(string txt)
+    {
+        congrats.gameObject.SetActive(true);
+        congrats.text = txt;
+        StartCoroutine(WaitAndDisappear());
+    }
 
     public enum State
     {
@@ -58,9 +64,7 @@ public class Puzzle : MonoBehaviour
         {
             state = State.Finished;
             
-            congrats.gameObject.SetActive(true);
-            congrats.text = "Congrats! You have solve the puzzle.";
-            StartCoroutine(WaitAndDisappear());
+            ActivateCongratsAndSetText("Congrats! You have solve the puzzle.");
             
             puzzleText.gameObject.SetActive(false);
             inputField.SetActive(false);
